@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="c_w_a.css">
+</head>
+<body>
+  <div class="calculator">
+    <input id="display" class="display" type="text" readonly />
+    <div class="buttons">
+      <!-- Row 1 -->
+      <button class="btn" onclick="clearDisplay()">C</button>
+      <button class="btn" onclick="deleteLast()">DEL</button>
+      <button class="btn" onclick="appendToDisplay('/')">/</button>
+      <button class="btn" onclick="appendToDisplay('*')">*</button>
+      
+      <!-- Row 2 -->
+      <button class="btn" onclick="appendToDisplay('7')">7</button>
+      <button class="btn" onclick="appendToDisplay('8')">8</button>
+      <button class="btn" onclick="appendToDisplay('9')">9</button>
+      <button class="btn" onclick="appendToDisplay('-')">-</button>
+      
+      <!-- Row 3 -->
+      <button class="btn" onclick="appendToDisplay('4')">4</button>
+      <button class="btn" onclick="appendToDisplay('5')">5</button>
+      <button class="btn" onclick="appendToDisplay('6')">6</button>
+      <button class="btn" onclick="appendToDisplay('+')">+</button>
+      
+      <!-- Row 4 -->
+      <button class="btn" onclick="appendToDisplay('1')">1</button>
+      <button class="btn" onclick="appendToDisplay('2')">2</button>
+      <button class="btn" onclick="appendToDisplay('3')">3</button>
+      <button class="btn" onclick="calculate()">=</button>
+      
+      <!-- Row 5 -->
+      <button class="btn" onclick="appendToDisplay('0')">0</button>
+      <button class="btn" onclick="appendToDisplay('.')">.</button>
+      <button class="btn" onclick="appendToDisplay('sin(')">sin</button>
+      <button class="btn" onclick="appendToDisplay('cos(')">cos</button>
+      
+      <!-- Row 6 -->
+      <button class="btn" onclick="appendToDisplay('tan(')">tan</button>
+      <button class="btn" onclick="appendToDisplay('log(')">log</button>
+      <button class="btn" onclick="appendToDisplay('exp(')">exp</button>
+      <button class="btn" onclick="appendToDisplay('sqrt(')">√</button>
+      
+      <!-- Row 7 -->
+      <button class="btn" onclick="appendToDisplay('(')">(</button>
+      <button class="btn" onclick="appendToDisplay(')')">)</button>
+      <button class="btn" onclick="storeMemory()">M+</button>
+      <button class="btn" onclick="recallMemory()">MR</button>
+    </div>
+  </div>
+
+  <script src="c_w_a.js"></script>
+</body>
+</html>
